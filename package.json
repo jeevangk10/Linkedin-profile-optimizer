@@ -5,7 +5,7 @@
   "description": "AI-powered LinkedIn profile optimizer",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "nodemon backend/server.js",
+    "dev:server": "node --watch backend/server.js",
     "dev:client": "vite frontend --host 0.0.0.0",
     "start": "node backend/server.js",
     "build": "vite build frontend",
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
-    "nodemon": "^3.1.10",
     "vite": "^7.1.5"
   }
 }
